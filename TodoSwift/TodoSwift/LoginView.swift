@@ -11,6 +11,7 @@ struct LoginView: View {
     
     @State var email: String = ""
     @State var password: String = ""
+    @State private var isSecure = false
     
     var body: some View {
         NavigationStack{
@@ -36,10 +37,25 @@ struct LoginView: View {
                 
                 VStack(alignment: .leading) {
                     Text("Password")
-                    TextField("Enter your password", text: $password)
-                        .padding()
-                        .background(Color(UIColor.systemGray6))
-                        .cornerRadius(10)
+                    HStack {
+                        if isSecure {
+                            SecureField("Enter your password", text: $password)
+                                .padding()
+                        } else {
+                            TextField("Enter your password", text: $password)
+                                .padding()
+                        }
+                        
+                        Button(action: {
+                            isSecure.toggle()
+                        }) {
+                            Image(systemName: isSecure ? "eye.slash" : "eye")
+                                .foregroundColor(.gray)
+                        }
+                        .padding(.trailing, 10)
+                    }
+                    .background(Color(UIColor.systemGray6))
+                    .cornerRadius(10)
                 }
                 .padding(.horizontal, 20)
             }
