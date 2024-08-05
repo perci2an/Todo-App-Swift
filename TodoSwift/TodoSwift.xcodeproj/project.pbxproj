@@ -14,6 +14,7 @@
 		1A0132C72C5B63F3001C8511 /* TodoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0132C62C5B63F3001C8511 /* TodoSwiftTests.swift */; };
 		1A0132D12C5B63F3001C8511 /* TodoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0132D02C5B63F3001C8511 /* TodoSwiftUITests.swift */; };
 		1A0132D32C5B63F3001C8511 /* TodoSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0132D22C5B63F3001C8511 /* TodoSwiftUITestsLaunchTests.swift */; };
+		1AE92B0C2C60969D001E2BE7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE92B0B2C60969D001E2BE7 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		1A0132CC2C5B63F3001C8511 /* TodoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A0132D02C5B63F3001C8511 /* TodoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoSwiftUITests.swift; sourceTree = "<group>"; };
 		1A0132D22C5B63F3001C8511 /* TodoSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1AE92B0B2C60969D001E2BE7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				1A0132B72C5B63F2001C8511 /* ContentView.swift */,
 				1A0132B92C5B63F3001C8511 /* Assets.xcassets */,
 				1A0132BB2C5B63F3001C8511 /* Preview Content */,
+				1AE92B0B2C60969D001E2BE7 /* LoginView.swift */,
 			);
 			path = TodoSwift;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AE92B0C2C60969D001E2BE7 /* LoginView.swift in Sources */,
 				1A0132B82C5B63F2001C8511 /* ContentView.swift in Sources */,
 				1A0132B62C5B63F2001C8511 /* TodoSwiftApp.swift in Sources */,
 			);
